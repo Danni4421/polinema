@@ -543,7 +543,9 @@ Nilai ke 1 lebih besar 1 dari pada nilai ke 2
 ```
 
 2.  Perhatikan flowchart berikut ini:
+
     ![](assets/TUGAS2.png)
+
     Buatlah program sesuai dengan flowchart diatas!
 
     ```java
