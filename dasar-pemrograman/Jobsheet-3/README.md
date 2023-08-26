@@ -3,6 +3,13 @@
     <h4>Variabel, Tipe Data, Operator dan </h4>
 </div>
 
+## Identitas Mahasiswa
+
+> Nama : Aji Hamdani Ahmad <br/>
+> Kelas : 1B <br/>
+> Prodi : D-IV Teknik Informatika <br/>
+> Jurusan : Teknologi Informasi <br/>
+
 ## 1. Tujuan
 
 - Mahasiswa dapat memahami dan mampu menjelaskan tentang Tipe Data ke

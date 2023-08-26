@@ -1,6 +1,13 @@
 <h1 style="text-align: center;">Jobsheet 2</h1>
 <h4 style="text-align: center;">Studi Kasus</h4>
 
+## Identitas Mahasiswa
+
+> Nama : Aji Hamdani Ahmad <br/>
+> Kelas : 1B <br/>
+> Prodi : D-IV Teknik Informatika <br/>
+> Jurusan : Teknologi Informasi <br/>
+
 ## 1. Tujuan
 
 - Mahasiswa dapat memodelkan permasalahan studi kasus Sequence.
@@ -46,5 +53,4 @@ Jawaban:
    - **Input**: Jumlah tabungan, Bunga setiap bulan, lama menabung
    - **Output**: Bunga, Jumlah tabungan sekarang
    - **Data lain**: -
-   - **Proses**: <br/>
-     -
+   - ## **Proses**: <br/>
