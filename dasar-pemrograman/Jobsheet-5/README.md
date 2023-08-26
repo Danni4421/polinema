@@ -458,6 +458,7 @@
    ```
 
 2. Perhatikan flowchart berikut ini:
+
    ![](assets/img/TUGAS2.png)
 
    Buat program sesuai dengan flowchart tersebut!
