@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,7 +12,6 @@ header {
   width: 100%;
   padding: 15px;
   background-color: #702cf5;
-  box-shadow: 0 1px 2px 1px #7d7d7d;
 }
 
 header .content {
@@ -20,6 +19,11 @@ header .content {
   margin: 0 auto;
   width: 65%;
   color: #fff;
+}
+
+body {
+  color: #fff;
+  background-color: #212529;
 }
 
 li {
@@ -30,12 +34,16 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  font-size: 2.1rem;
+}
+
 .container {
   display: flex;
   width: 70%;
   margin: 0 auto;
-  padding: 20px;
-  margin-top: 6vh;
+  padding: 40px 0;
+  margin-top: 5vh;
 }
 
 .navigation {
@@ -47,7 +55,6 @@ a {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  padding: 0 40px;
 }
 
 .navigation ul li a {
@@ -63,8 +70,20 @@ a {
   padding: 10px;
   border-radius: 5px;
   outline: none;
+  color: #fff;
+  font-size: 1.1rem;
   background: rgba(240, 240, 240, 0.2);
   border: 1px solid rgba(240, 240, 240, 0.6);
+  transition: 0.5s;
+}
+
+.search-input input:hover {
+  box-shadow: 0 0 5px 1px orange;
+}
+
+.search-input input::placeholder {
+  font-size: 1.2rem;
+  color: #bebebe;
 }
 
 .acc {
@@ -74,6 +93,10 @@ a {
   flex: 4;
 }
 
+.contact a {
+  margin: 0 5px;
+}
+
 .acc ul {
   display: flex;
   justify-content: flex-end;
@@ -81,9 +104,19 @@ a {
   gap: 20px;
 }
 
+.acc a {
+  color: #ffffff;
+}
+
 .sidebar {
-  flex: 4;
+  flex: 3;
+  height: 100vh;
   padding: 0 10px;
+}
+
+.sidebar ul {
+  height: 100%;
+  overflow: auto;
 }
 
 .sidebar ul li h4 {
@@ -98,8 +131,12 @@ a {
   text-indent: 20px;
 }
 
+.parent-item span {
+  margin-right: 10px;
+}
+
 main {
-  flex: 8;
+  flex: 10;
   padding: 0 20px;
 }
 
@@ -113,7 +150,108 @@ main .content::-webkit-scrollbar {
   display: none;
 }
 
+.getting-started {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.getting-started p {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#btn-github {
+  padding: 7px 13px;
+  border-radius: 10px;
+  background: none;
+  color: #8e8e8e;
+  border: 1px solid #8e8e8e;
+  transition: 0.3s;
+}
+
+#btn-github:hover {
+  color: #702cf5;
+  border: 1px solid #702cf5;
+  transition: 0.3s;
+}
+
+.motto {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.adds {
+  display: flex;
+  margin: 20px 0;
+  gap: 15px;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2b3035;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.quick-start ol {
+  padding: 20px;
+  text-indent: 20px;
+}
+
 aside {
-  flex: 6;
+  flex: 3;
   padding: 0 10px;
+  color: #bfc1c3;
+  font-weight: 100;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 5px;
+}
+
+footer {
+  background-color: #2b3035;
+  padding: 100px;
+}
+
+.container-footer {
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
+  grid-template-areas:
+    "overview links guides projects community"
+    "overview links guides projects community";
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.overview-footer {
+  grid-area: overview;
+  padding: 0 20px;
+}
+
+.overview-footer h4 {
+  font-size: 1.8rem;
+}
+
+.links {
+  grid-area: links;
+}
+
+.guides {
+  grid-area: guides;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.community {
+  grid-area: community;
 }
