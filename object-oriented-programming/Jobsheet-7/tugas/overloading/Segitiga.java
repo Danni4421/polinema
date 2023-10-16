@@ -16,14 +16,14 @@ public class Segitiga {
     }
 
     public double keliling(int sisiA, int sisiB) {
-        return Math.sqrt(Math.pow(sisiA, 2)) + Math.sqrt(Math.pow(sisiB, 2));
+        return sisiA + sisiB + Math.sqrt(Math.pow(sisiA, 2) + Math.pow(sisiB, 2));
     }
 
     public static void main(String[] args) {
         Segitiga segitiga = new Segitiga();
         System.out.println("Total sudut: " + segitiga.totalSudut(45));
         System.out.println("Total sudut Overloading: " + segitiga.totalSudut(45, 30));
-        System.out.println("Keliling: " + segitiga.keliling(2, 3, 4));
-        System.out.println("Keliling: " + segitiga.keliling(2, 3));
+        System.out.println("Keliling: " + segitiga.keliling(3, 4 , 5));  
+        System.out.println("Keliling: " + segitiga.keliling(3, 4));
     }
 }
